@@ -44,10 +44,11 @@ en:
     back: 'Back'
 
   message:
-    are you sure?: 'Are you sure?'
-    book was successfully created: 'Book was successfully created.'
-    book was successfully updated: 'Book was successfully updated.'
-    book was successfully destroyed: 'Book was successfully destroyed.'
+    confirm: 'Are you sure?'
+    successfully: 'Book was successfully %{done}'
+    created: 'created'
+    updated: 'updated'
+    destroyed: 'destroyed'
 
   activerecord:
     attributes:

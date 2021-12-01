@@ -13,10 +13,11 @@ ja:
     back: '戻る'
 
   message:
-    are you sure?: '本当によろしいですか?'
-    book was successfully created: '正常に登録されました。'
-    book was successfully updated: '正常に更新されました。'
-    book was successfully destroyed: '正常に削除されました。'
+    confirm: '本当によろしいですか?'
+    successfully: '正常に%{done}されました'
+    created: '作成'
+    updated: '更新'
+    destroyed: '削除'
 
   activerecord:
     attributes:
