@@ -25,6 +25,11 @@ ja:
         password: "パスワード"
         password_confirmation: "確認用パスワード"
         remember_me: "次回から自動的にログイン"
+        postal_code: "郵便番号"
+        prefecture: "都道府県"
+        city: "市町村"
+        town: "市町村以降"
+        introduction: "自己紹介文"
     models:
       user: "ユーザ"
   devise:
