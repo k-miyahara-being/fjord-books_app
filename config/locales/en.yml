@@ -45,12 +45,14 @@ en:
 
   message:
     confirm: 'Are you sure?'
-    successfully: 'Book was successfully %{done}'
+    successed: '%{something} was successfully %{done}'
     created: 'created'
     updated: 'updated'
     destroyed: 'destroyed'
 
   activerecord:
+    models:
+      book: 'Book'
     attributes:
       book:
         title: 'Title'

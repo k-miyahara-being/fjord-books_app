@@ -14,12 +14,14 @@ ja:
 
   message:
     confirm: '本当によろしいですか?'
-    successfully: '正常に%{done}されました'
+    successed: '%{something}は正常に%{done}されました'
     created: '作成'
     updated: '更新'
     destroyed: '削除'
 
   activerecord:
+    models:
+      book: '書籍'
     attributes:
       book:
         title: '書籍名'
