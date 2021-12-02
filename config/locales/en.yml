@@ -30,4 +30,36 @@
 # available at https://guides.rubyonrails.org/i18n.html.
 
 en:
-  hello: "Hello world"
+  title:
+    books app: 'BookApp'
+    books: 'Books'
+    new book: 'New Book'
+    editing book: 'Editing Book'
+    
+  button:
+    show: 'Show'
+    edit: 'Edit'
+    destroy: 'Destroy'
+    new book: 'New Book'
+    back: 'Back'
+
+  message:
+    confirm: 'Are you sure?'
+    successed: '%{something} was successfully %{done}'
+    created: 'created'
+    updated: 'updated'
+    destroyed: 'destroyed'
+
+  activerecord:
+    models:
+      book: 'Book'
+    attributes:
+      book:
+        title: 'Title'
+        memo: 'Memo'
+        author: 'Author'
+        picture: 'Picture'
+
+  helpers:
+    submit:
+      create: 'Create Book'

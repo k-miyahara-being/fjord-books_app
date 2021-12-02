@@ -1,0 +1,34 @@
+ja:
+  title:
+    books app: '書籍管理アプリ'
+    books: '書籍一覧'
+    new book: '新規登録'
+    editing book: '書籍編集'
+    
+  button:
+    show: '詳細'
+    edit: '編集'
+    destroy: '削除'
+    new book: '追加'
+    back: '戻る'
+
+  message:
+    confirm: '本当によろしいですか?'
+    successed: '%{something}は正常に%{done}されました'
+    created: '作成'
+    updated: '更新'
+    destroyed: '削除'
+
+  activerecord:
+    models:
+      book: '書籍'
+    attributes:
+      book:
+        title: '書籍名'
+        memo: '概要'
+        author: '著者名'
+        picture: '画像'
+
+  helpers:
+    submit:
+      create: '登録する'
