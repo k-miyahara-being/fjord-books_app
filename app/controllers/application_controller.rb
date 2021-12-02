@@ -1,13 +1,13 @@
 # frozen_string_literal: true
 
 class ApplicationController < ActionController::Base
-    before_action :authenticate_user!
-    before_action :configure_permitted_parameters, if: :devise_controller?
+  before_action :authenticate_user!
+  before_action :configure_permitted_parameters, if: :devise_controller?
 
-    protected
-  
-    def configure_permitted_parameters
-      devise_parameter_sanitizer.permit(:sign_up, keys: [:postal_code, :prefecture, :city, :town])
-      devise_parameter_sanitizer.permit(:account_update, keys: [:postal_code, :prefecture, :city, :town])
-    end
+  protected
+
+  def configure_permitted_parameters
+    devise_parameter_sanitizer.permit(:sign_up, keys: %i[username postal_code prefecture city town introduction])
+    devise_parameter_sanitizer.permit(:account_update, keys: %i[username postal_code prefecture city town introduction])
+  end
 end
