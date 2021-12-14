@@ -1,9 +1,6 @@
 # Read about fixtures at https://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
 
-one:
-  title: MyString
-  memo: MyText
-
-two:
-  title: MyString
-  memo: MyText
+novel:
+  title: '容疑者Xの献身'
+  memo: '映画化しました。'
+  author: '東野圭吾'
