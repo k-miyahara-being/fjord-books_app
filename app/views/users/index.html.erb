@@ -1,0 +1,12 @@
+<% provide(:title, 'All users') %>
+<h1><%= t('devise.users.list') %></h1>
+ 
+<ul class="users">
+  <% @users.each do |user| %>
+    <li>
+      <%= link_to user.username_or_email, user %>
+    </li>
+  <% end %>
+</ul>
+
+<%= paginate @users %>

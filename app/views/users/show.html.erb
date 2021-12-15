@@ -1,0 +1,27 @@
+<% provide(:title, @user.email) %>
+<h1><%= t('devise.users.my_page') %>(<%= @user.username %>)</h1>
+
+<div>
+  <strong><%= User.human_attribute_name(:username) %>:</strong>
+  <%= @user.username %>
+</div>
+
+<div>
+  <strong><%= User.human_attribute_name(:email) %>:</strong>
+  <%= @user.email %>
+</div>
+
+<div>
+  <strong><%= User.human_attribute_name(:postal_code) %>:</strong>
+  <%= @user.postal_code %>
+</div>
+
+<div>
+  <strong><%= User.human_attribute_name(:address) %>:</strong>
+  <%= @user.prefecture %><%= @user.city %><%= @user.town %>
+</div>
+
+<div>
+  <strong><%= User.human_attribute_name(:introduction) %>:</strong>
+  <%= @user.introduction %>
+</div>
