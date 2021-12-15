@@ -6,5 +6,7 @@ class AddAdressToUser < ActiveRecord::Migration[6.1]
     add_column :users, :prefecture, :string
     add_column :users, :city, :string
     add_column :users, :town, :string
+    add_column :users, :introduction, :text
+    add_column :users, :username, :string
   end
 end
