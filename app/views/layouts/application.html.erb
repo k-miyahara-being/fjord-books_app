@@ -10,6 +10,16 @@
   </head>
 
   <body>
+    <% if user_signed_in? %>
+      <header>
+        <nav>
+          <%= link_to 'プロフィール変更', edit_user_registration_path %>
+          <%= link_to 'ユーザー一覧', users_path %>
+          <%= link_to '書籍一覧', books_path %>
+          <%= link_to 'ログアウト', destroy_user_session_path, method: :delete %>
+        </nav>
+      </header>
+    <% end %>
     <%= yield %>
   </body>
 </html>

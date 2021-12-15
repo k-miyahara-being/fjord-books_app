@@ -9,4 +9,8 @@ class User < ApplicationRecord
   validates :prefecture, presence: true
   validates :city, presence: true
   validates :town, presence: true
+
+  def username_or_email
+    username.presence || email
+  end
 end
